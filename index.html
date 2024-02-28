@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator Guadalupe Rickel</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="img/logo_password_generator.png" alt="Logo of the password generator page of Guadalupe Rickel">
+		</div>
+		<form action="" class="app" id="app">
+			<div class="row amount-characters">
+				<div class="col">
+					<label for="amount-characters">Amount of characters:</label>
+				</div>
+				<div class="col buttons">
+					<div>
+						<button class="btn" id="btn-minus-one"><i class="fas fa-minus"></i></button>
+					</div>
+					<div>
+						<input type="text" id="amount-characters" readonly value="12">
+					</div>
+					<div>
+						<button class="btn" id="btn-plus-one"><i class="fas fa-plus"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="row symbols">
+				<div class="col">
+					<label for="symbols">Contains Symbols?</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-symbols"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="row numbers">
+				<div class="col">
+					<label for="numbers">Contains Numbers?</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-numbers"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="row uppercase">
+				<div class="col">
+					<label for="uppercase">Contains Uppercase?</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-uppercase"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="row generate">
+				<div class="col">
+					<button class="btn btn-generate" id="btn-generate">Generate <i class="fas fa-lock"></i></button>
+				</div>
+				<div class="col">
+					<input type="text" class="input-password" id="input-password" readonly value="P@ssW@rD">
+				</div>
+			</div>
+			<div class="row alert">
+				<div class="col">
+					<div class="alert-copy" id="alert-copy">
+						<p><i class="fas fa-copy"></i> Copied text!</p>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="credits">
+			<p>Created by <a href="www.linkedin.com/in/guadalupe-rickel" target="_blank">Guadalupe Rickel</a></p>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
